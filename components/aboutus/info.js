@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../../styles/info.module.css'
 import { FaLocationCrosshairs } from "react-icons/fa6";
 import { MdMailOutline } from "react-icons/md";
-import { BsFillTelephonePlusFill } from 'react-icons/Bs';
+import { FaQuoteLeft } from "react-icons/fa6";
 
 const info = () => {
   return (
@@ -21,7 +21,7 @@ const info = () => {
        <p>info@hyperglotreview.com</p>
       </div>
       <div className={styles.container}>
-        <h3>PHONE NUMBER<BsFillTelephonePlusFill className={styles.icon}/></h3>
+        <h3>PHONE NUMBER<FaQuoteLeft className={styles.icon}/></h3>
         <h4>Landline</h4>
         <p>011 3569 1637</p>
         <h4>Operations</h4>
