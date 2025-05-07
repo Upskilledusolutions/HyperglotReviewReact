@@ -1,5 +1,5 @@
 import styles from '../styles/footer.module.css';
-import {FaFacebook, FaInstagram, FaLinkedin, FaYoutube} from 'react-icons/fa';
+import {FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaYoutube} from 'react-icons/fa';
 
 const footer = () => {
   return (
@@ -14,7 +14,7 @@ const footer = () => {
           <FaFacebook className={styles.icon}/>Facebook
         </a>
         <a href='https://twitter.com/HyperglotReview'>
-          <BsTwitter className={styles.icon}/>Twitter
+          <FaTwitter className={styles.icon}/>Twitter
         </a>
       </div>
       <div className={styles.top}>
