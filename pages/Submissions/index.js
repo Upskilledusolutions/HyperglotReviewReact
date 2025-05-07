@@ -3,9 +3,9 @@ import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
 import styles from '../../styles/submissions.module.css'
 import Image from 'next/image'
-import { BiCurrentLocation } from 'react-icons/Bi'
-import { FiMail } from 'react-icons/Fi'
-import { BsFillTelephoneFill } from 'react-icons/Bs'
+import { FaLocationCrosshairs } from "react-icons/fa6";
+import { MdMailOutline } from "react-icons/md";
+import { FaQuoteLeft } from "react-icons/fa6";
 
 const index = () => {
   return (
@@ -40,15 +40,15 @@ const index = () => {
       </div>
       <div className={styles.boxcontainer}>
         <div className={styles.info}>
-          <h4>ADDRESS INFO<BiCurrentLocation className={styles.icon}/></h4>
+          <h4>ADDRESS INFO<FaLocationCrosshairs className={styles.icon}/></h4>
           <p>303 A, Hemkunt Chambers, Nehru Place 110089</p>
         </div>
         <div className={styles.info}>
-          <h4>EMAIL INFO<FiMail className={styles.icon}/></h4>
+          <h4>EMAIL INFO<MdMailOutline className={styles.icon}/></h4>
           <p>editorial@hyperglotreview.com</p>
         </div>
         <div className={styles.info}>
-          <h4>PHONE NUMBER<BsFillTelephoneFill className={styles.icon}/></h4>
+          <h4>PHONE NUMBER<FaQuoteLeft className={styles.icon}/></h4>
           <p>+91 97171 89650 <br /> +91 97170 41038</p>
         </div>
       </div>
