@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+:root {
+  --seagreen: rgb(0, 255, 255);
+  --white: #ffffff;
+  --background:white;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+p{
+  margin: 0;
+}
+.slick-prev, .slick-next{
+  height: 100px;
+}
+
+.button-swiper{
+  width: 48vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.swiper-button-next,.swiper-button-prev{
+  top: unset !important;
+  left: unset !important;
+  bottom: unset !important;
+  right: unset !important;
+  height: 10px !important;
+  width: 10px !important;
+  position: unset !important;
+  color: black !important;
+  background-color: white;
+  padding: 10px 0.75vw;
+  border-radius: 50%;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 15px !important;
+  font-weight: 600 !important;
+}
+.swiper-controller{
+  position: relative;
+}
+.button-Arrangement{
+  position: absolute;
+  left: 1vw;
+  top: 40%;
+}
+.vertical-timeline-element-date{
+  color: black;
+} 
+@media screen and (max-width: 768px){
+  .swiper-button-next,.swiper-button-prev{
+    padding: 20px;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 30px !important;
+  }
+  .button-swiper{
+    width: 90vw;
+  }
+}
