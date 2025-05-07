@@ -2,8 +2,7 @@ import Image from 'next/image'
 import styles from '../styles/navbar.module.css'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import {FaAngleDown, FaFacebookSquare} from 'react-icons/Fa';
-import {BsInstagram , BsTwitter , BsYoutube , BsLinkedin} from 'react-icons/Bs'
+import {FaAngleDown, FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube} from 'react-icons/fa';
 import { useRouter } from 'next/router';
 
 const navbar = () => {
@@ -150,19 +149,19 @@ const navbar = () => {
             </div>
             <div className={styles.dropdowncontent} style={{ display: openDropdown === 2 ? 'block' : 'none' }}>
              <Link className={styles.droplinks} href="https://www.instagram.com/hyperglotreview/?igshid=YmMyMTA2M2Y%3D">
-              <BsInstagram className={styles.icon}/>Instagram
+              <FaInstagram className={styles.icon}/>Instagram
              </Link>
              <Link className={styles.droplinks} href="https://www.facebook.com/people/Hyperglot-Review/100089166761501/?mibextid=ZbWKwL">
-              <FaFacebookSquare className={styles.icon}/>Facebook
+              <FaFacebook className={styles.icon}/>Facebook
              </Link>
              <Link className={styles.droplinks} href="https://twitter.com/HyperglotReview">
-              <BsTwitter className={styles.icon}/>Twitter
+              <FaTwitter className={styles.icon}/>Twitter
              </Link>
              <Link className={styles.droplinks} href="https://www.linkedin.com/company/hyperglot-review/">
-              <BsLinkedin className={styles.icon}/>LinkedIn
+              <FaLinkedin className={styles.icon}/>LinkedIn
              </Link>
              <Link className={styles.droplinks} href="https://www.youtube.com/@HyperglotReview/featured">
-              <BsYoutube className={styles.icon}/>Youtube
+              <FaYoutube className={styles.icon}/>Youtube
               </Link>
             </div>
           </div>

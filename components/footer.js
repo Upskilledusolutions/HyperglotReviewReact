@@ -1,6 +1,5 @@
 import styles from '../styles/footer.module.css';
-import { FaFacebook } from "react-icons/fa";
-import {BsInstagram , BsTwitter , BsYoutube , BsLinkedin} from 'react-icons/Bs'
+import {FaFacebook, FaInstagram, FaLinkedin, FaYoutube} from 'react-icons/fa';
 
 const footer = () => {
   return (
@@ -9,7 +8,7 @@ const footer = () => {
       <p>Follow Us On:</p>
       <div className={styles.top}>
         <a href='https://www.instagram.com/hyperglotreview/?igshid=YmMyMTA2M2Y%3D'>
-          <BsInstagram className={styles.icon}/>Instagram
+          <FaInstagram className={styles.icon}/>Instagram
         </a>
         <a href='https://www.facebook.com/people/Hyperglot-Review/100089166761501/?mibextid=ZbWKwL'>
           <FaFacebook className={styles.icon}/>Facebook
@@ -20,10 +19,10 @@ const footer = () => {
       </div>
       <div className={styles.top}>
         <a href='https://www.linkedin.com/company/hyperglot-review/'>
-          <BsLinkedin className={styles.icon}/>LinkedIn
+          <FaLinkedin className={styles.icon}/>LinkedIn
         </a>
         <a href='https://www.youtube.com/@HyperglotReview/featured'>
-          <BsYoutube className={styles.icon}/>Youtube
+          <FaYoutube className={styles.icon}/>Youtube
         </a>
       </div>
       <div className={styles.span}><span >@2022 Hyperglot Solutions OPC Private Limited . All Rights Reserved.</span></div>
